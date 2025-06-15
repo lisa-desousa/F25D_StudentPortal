@@ -13,38 +13,43 @@ import RegistrationProvider from "./Components/RegistrationProvider.jsx";
 import courses from "./Data/Courses.js";
 import news from "./Data/News.js";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "home",
+          element: <Home />,
+        },
+        {
+          path: "courses",
+          element: <Courses />,
+        },
+        {
+          path: "news",
+          element: <News />,
+        },
+        {
+          path: "courses/:id",
+          element: <CourseDetails />,
+        },
+        {
+          path: "registration",
+          element: <Register />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        index: true,
-        element: <Home />,
-      },
-      {
-        path: "home",
-        element: <Home />,
-      },
-      {
-        path: "courses",
-        element: <Courses />,
-      },
-      {
-        path: "news",
-        element: <News />,
-      },
-      {
-        path: "courses/:id",
-        element: <CourseDetails />,
-      },
-      {
-        path: "registration",
-        element: <Register />,
-      },
-    ],
-  },
-]);
+    basename: "/F25D_StudentPortal",
+  }
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
