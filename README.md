@@ -1,12 +1,10 @@
-# React + Vite
+# Student Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## For YH Borås, Class F25D
 
-Currently, two official plugins are available:
+The application is live at: (https://lisa-desousa.github.io/F25D_StudentPortal/) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instructions
+The instructions for this assignment was to create a Student Portal with a navbar and multiple pages like courses, news and a home page, with a mix of bootstrap and MUI. When you choose courses in the registration-form your choises are saved and displayed on the home page, the courses page and each chosen course's details page.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Thanks for looking at my project!
